@@ -1,7 +1,7 @@
 from splinter.browser import Browser
 import time, sys
 
-#browser = Browser('chrome') 				# Selenium Standalone on your local machine
+#browser = Browser('chrome') 			# Selenium Standalone on your local machine
 browser = Browser(driver_name="remote",  	# Docker Selenium Standalone
                   url='http://127.0.0.1:4444/wd/hub',
                   browser='chrome')
